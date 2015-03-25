@@ -25,24 +25,22 @@ public class SingleInstanceActivity extends ActionBarActivity {
         setContentView(R.layout.activity_single_instance);
         ButterKnife.inject(this);
 
-
+        String imageUrl = "http://f.hiphotos.baidu.com/baike/c0%3Dbaike180%2C5%2C5%2C180%2C60/" +
+                "sign=79273b583e292df583cea447dd583705/d0c8a786c9177f3e8ac0027a74cf3bc79e3d56d5.jpg";
         ImageLoader imageLoader = MySingleton.getInstance(
                 this.getApplicationContext()).getImageLoader();
-        String imageUrl = "http://f.hiphotos.baidu.com/baike/c0%3Dbaike180%2C5%2C5%2C180%2C60/sign=79273b583e292df583cea447dd583705/d0c8a786c9177f3e8ac0027a74cf3bc79e3d56d5.jpg";
         imageLoader.get(imageUrl,
                 new ImageLoader.ImageListener() {
                     @Override
                     public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
                         imageView.setImageBitmap(imageContainer.getBitmap());
                     }
-
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
-
+                        imageView.setImageResource(R.mipmap.ic_launcher);
                     }
                 });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

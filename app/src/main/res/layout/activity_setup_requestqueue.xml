@@ -14,12 +14,4 @@
         android:gravity="center"
         tools:ignore="UnusedAttribute" />
     
-    <Button
-        android:id="@+id/button"
-        android:layout_below="@+id/tv_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="自定义 RequestQueue"/>
-
 </RelativeLayout>

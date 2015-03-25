@@ -32,6 +32,10 @@ public class MainActivity extends ActionBarActivity {
     Button button;
     @InjectView(R.id.button_single)
     Button button_single;
+    @InjectView(R.id.button_request)
+    Button button_request;
+    @InjectView(R.id.button_json)
+    Button button_json;
 
     public static final String TAG = "MyTag";
 
@@ -83,6 +87,20 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SingleInstanceActivity.class);
+                startActivity(intent);
+            }
+        });
+        button_request.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, StandardRequestActivity.class);
+                startActivity(intent);
+            }
+        });
+        button_json.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, JSONRequestActivity.class);
                 startActivity(intent);
             }
         });

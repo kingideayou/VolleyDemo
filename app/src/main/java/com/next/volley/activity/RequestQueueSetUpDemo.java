@@ -61,7 +61,7 @@ public class RequestQueueSetUpDemo extends ActionBarActivity{
         //启动 requestQueue
         requestQueue.start();
 
-        String url = "http://www.weibo.com";
+        String url = "http://www.zhihu.com";
         //设置请求和处理结果
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

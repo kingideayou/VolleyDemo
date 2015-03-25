@@ -23,6 +23,14 @@
             android:name=".activity.SingleInstanceActivity"
             android:label="@string/title_activity_single_instance" >
         </activity>
+        <activity
+            android:name=".activity.StandardRequestActivity"
+            android:label="@string/title_activity_standard_request" >
+        </activity>
+        <activity
+            android:name=".activity.JSONRequestActivity"
+            android:label="@string/title_activity_jsonrequest" >
+        </activity>
     </application>
 
 </manifest>

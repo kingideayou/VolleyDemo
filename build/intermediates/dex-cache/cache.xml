@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/Users/gongsh001/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/gongsh001/VolleyDemo/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5208078367966fa87979a3c6fc103985fa757b6d.jar" />
+    </item>
+    <item
         jar="/Users/gongsh001/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -9,11 +16,25 @@
         <dex dex="/NeXT/MyProjects/MyApplication/app/build/intermediates/pre-dexed/debug/butterknife-6.1.0-03e93f2b22064f015e2d81757505ce30e506de91.jar" />
     </item>
     <item
+        jar="/Users/gongsh001/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/gongsh001/VolleyDemo/app/build/intermediates/pre-dexed/debug/classes-ff67353ff22a8af0a375937535b1e98e2c05f295.jar" />
+    </item>
+    <item
         jar="/NeXT/NeXT/android_sudio_sdk/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
         <dex dex="/NeXT/MyProjects/MyApplication/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-490273baf6831d8dc9e470c4077e90f7e756ce1c.jar" />
+    </item>
+    <item
+        jar="/Users/gongsh001/VolleyDemo/app/libs/volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="/Users/gongsh001/VolleyDemo/app/build/intermediates/pre-dexed/debug/volley-a9b35382ac8c7a1ada27f8bd545541bd7f62e870.jar" />
     </item>
     <item
         jar="/NeXT/MyProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
@@ -37,6 +58,13 @@
         <dex dex="/NeXT/MyProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes-4756b179d95d322d88ab9348423bd9709c6a1038.jar" />
     </item>
     <item
+        jar="/Users/gongsh001/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/gongsh001/VolleyDemo/app/build/intermediates/pre-dexed/debug/classes-2e8a491218dd59c365011541f97a9c33f56ba815.jar" />
+    </item>
+    <item
         jar="/NeXT/MyProjects/MyApplication/app/libs/volley.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -49,6 +77,13 @@
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
         <dex dex="/NeXT/MyProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes-8a179a5967f1b464f33b5966d5f1f466c8dd2d5c.jar" />
+    </item>
+    <item
+        jar="/Users/gongsh001/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/gongsh001/VolleyDemo/app/build/intermediates/pre-dexed/debug/classes-63bc3b589d091eebcc09f53ffb20feadb57fd03d.jar" />
     </item>
 
 </items>
