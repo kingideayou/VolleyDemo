@@ -2,6 +2,7 @@ package com.next.volley.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -9,9 +10,13 @@ import android.widget.TextView;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.next.volley.R;
+import com.next.volley.model.MessageModel;
 import com.next.volley.model.WeatherModel;
 import com.next.volley.support.FastJsonRequest;
 import com.next.volley.support.MySingleton;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -22,13 +27,35 @@ public class FastJsonRequestActivity extends ActionBarActivity {
     TextView text;
 
     String url = "http://www.weather.com.cn/adat/sk/101010100.html";
+    String urlPost = "http://askcar.api.gongsh.com/answer/get";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fast_json_request);
         ButterKnife.inject(this);
-        initFastJsonRequest();
+//        initFastJsonRequest();
+        initFastJsonRequestPost();
+    }
+
+    private void initFastJsonRequestPost(){
+        Map<String, String> params = new HashMap<>();
+        params.put("answer_id", "105");
+        FastJsonRequest fastJsonRequestPost = new FastJsonRequest<>(
+                urlPost, MessageModel.class, null, params,
+                new Response.Listener<MessageModel>() {
+                    @Override
+                    public void onResponse(MessageModel messageModel) {
+                        Log.i("FastJsonPostResponse", messageModel.toString());
+                        text.setText(messageModel.toString());
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        });
+        MySingleton.getInstance(this).addToRequestQueue(fastJsonRequestPost);
     }
 
     private void initFastJsonRequest() {
@@ -37,7 +64,7 @@ public class FastJsonRequestActivity extends ActionBarActivity {
                 new Response.Listener<WeatherModel>() {
                     @Override
                     public void onResponse(WeatherModel weatherModel) {
-                        text.setText(weatherModel.toString());
+
                     }
                 }, new Response.ErrorListener() {
             @Override
