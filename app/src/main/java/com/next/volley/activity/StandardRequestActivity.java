@@ -12,7 +12,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.NetworkImageView;
-import com.next.volley.MySingleton;
+import com.next.volley.support.MySingleton;
 import com.next.volley.R;
 
 import butterknife.ButterKnife;

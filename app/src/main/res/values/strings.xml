@@ -6,4 +6,5 @@
     <string name="title_activity_single_instance">" RequestQueue单例"</string>
     <string name="title_activity_standard_request">创建标准请求</string>
     <string name="title_activity_jsonrequest">获取 JSON 数据</string>
+    <string name="title_activity_fast_json_request">FastJsonRequestActivity</string>
 </resources>

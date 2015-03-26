@@ -1,4 +1,4 @@
-package com.next.volley;
+package com.next.volley.support;
 
 import android.content.Context;
 import android.graphics.Bitmap;

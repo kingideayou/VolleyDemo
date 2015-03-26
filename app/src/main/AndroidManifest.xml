@@ -31,6 +31,10 @@
             android:name=".activity.JSONRequestActivity"
             android:label="@string/title_activity_jsonrequest" >
         </activity>
+        <activity
+            android:name=".activity.FastJsonRequestActivity"
+            android:label="@string/title_activity_fast_json_request" >
+        </activity>
     </application>
 
 </manifest>

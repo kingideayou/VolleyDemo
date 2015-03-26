@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
-import com.next.volley.MySingleton;
+import com.next.volley.support.MySingleton;
 import com.next.volley.R;
 
 import butterknife.ButterKnife;

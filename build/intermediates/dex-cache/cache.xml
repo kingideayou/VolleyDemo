@@ -51,6 +51,13 @@
         <dex dex="/NeXT/MyProjects/MyApplication/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-22cc86ed457bd5ba0756ef044cf90721e9a06a61.jar" />
     </item>
     <item
+        jar="/Users/gongsh001/VolleyDemo/app/libs/fastjson-1.1.45.android.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4d5140a0c8f5e4d0f263cac44dbac1019a908474">
+        <dex dex="/Users/gongsh001/VolleyDemo/app/build/intermediates/pre-dexed/debug/fastjson-1.1.45.android-32a17ebe208fe145f3b6ce6ae017fbd7c96b3374.jar" />
+    </item>
+    <item
         jar="/NeXT/MyProjects/MyApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"

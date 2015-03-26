@@ -11,7 +11,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.next.volley.MySingleton;
+import com.next.volley.support.MySingleton;
 import com.next.volley.R;
 
 import org.json.JSONObject;

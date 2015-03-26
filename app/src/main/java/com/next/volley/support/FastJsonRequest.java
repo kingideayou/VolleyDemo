@@ -1,4 +1,6 @@
-package com.next.volley;
+package com.next.volley.support;
+
+import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
@@ -46,6 +48,10 @@ public class FastJsonRequest<T> extends Request<T> {
         try {
             String jsonStr = new String(networkResponse.data,
                     HttpHeaderParser.parseCharset(networkResponse.headers));
+            Log.i("FastJsonRequest", "获取的返回数据："+jsonStr);
+            /**
+             * {"weatherinfo":{"city":"北京","cityid":"101010100","temp":"9","WD":"西南风","WS":"2级","SD":"22%","WSE":"2","time":"10:45","isRadar":"1","Radar":"JC_RADAR_AZ9010_JB","njd":"暂无实况","qy":"1014"}}
+             */
             return Response.success(
                     json.parseObject(jsonStr, clazz),
                     HttpHeaderParser.parseCacheHeaders(networkResponse));
